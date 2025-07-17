@@ -15,7 +15,7 @@ const Login = () => {
       const res = await API.post("/auth/login", form);
       login(res.data);
       toast.success("Login successful!");
-      navigate("/");
+      navigate("/adminDashboard");
     } catch (err) {
       toast.error("Invalid credentials");
     }

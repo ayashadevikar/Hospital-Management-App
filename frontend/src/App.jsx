@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Components/Navbar";
 import PatientDashboard from "./Components/PatientDashboard";
+import AdminDashboard from "./Components/AdminDashboard";
 
 <ToastContainer position="top-right" autoClose={3000} />
 
@@ -31,6 +32,7 @@ function App() {
           }
         />
          <Route path="/patientDashboard" element={<PatientDashboard />} />
+          <Route path="/adminDashboard" element={<AdminDashboard />} />
         {/* More routes... */}
       </Routes>
     </BrowserRouter>
